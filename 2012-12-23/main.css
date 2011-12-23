@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Supermercado+One|Lato:100,300,700);
+
+h1 {
+	font-family: 'Supermercado One', cursive;
+  font-size: 46px;
+}
+
+p {
+	font-family: 'Lato', cursive;
+  line-height: 1.45;
+  font-size: 18px;
+}
+
+.ultralight {
+	font-weight: 100;
+}
+
+.thin {
+	font-weight: 300;
+}
+
+.heavy {
+	font-weight: 700;
+}
