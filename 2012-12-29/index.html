@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple and generic diretory monitor for Mac</title>
+    <link rel="stylesheet" href="man.css" type="text/css" />
+  </head>
+  <body>
+
+<div id='man'>
+
+<h1 class='man-title'>Simple and generic diretory monitor for Mac</h1>
+
+<ol class='head man'>
+  <li class='tl'>Python</li>
+  <li class='tc'>Directory monitor by MacFSEvents</li>
+  <li class='tr'>&nbsp;</li>
+</ol>
+
+<h2 id='NAME'>NAME</h2>
+
+<p><code>Directory monitor by MacFSEvents</code> &mdash; Simple and generic diretory monitor for Mac</p>
+
+<h2>DOWNLOAD</h2>
+
+<p><a href="directory_monitor.py">directory_monitor.py</a></p>
+
+<h2>REQUIREMENTS</h2>
+
+<p>This script requires <a href="http://pypi.python.org/pypi/MacFSEvents">MacFSEvents</a>. On my environment (Mac OS X 10.7.2 Lion), <a href="http://pypi.python.org/pypi/pip">pip</a> was not installed, but I could install pip by easy_install, which is installed by default (both requires sudo).</p>
+
+<pre><code>% sudo easy_install pip
+...(install pip)...
+% sudo pip install macfsevents
+...(install macfsevents)...</code></pre>
+
+<h2>USAGE</h2>
+
+<p>Here's how you run this:</p>
+
+<pre><code>% directory_monitor.py ~/directory/to/watch ~/callback/script &
+[2] XXXX
+Log path is /Users/YOUR_HOME/Library/Logs/directory_monitor-XXXX.log</code></pre>
+
+<h2>FAQ</h2>
+
+<ul>
+  <li>
+    <code>So how do i stop the process?</code>
+    &mdash; there is no way to stop it properly. Just use kill command.
+  </li>
+</ul>
+
+<h2>SEE ALSO</h2>
+
+<p>
+  <a href="http://blog.philippklaus.de/2011/08/use-the-python-module-macfsevents-to-monitor-directories-for-changes-on-mac-os-x/">Use the Python Module MacFSEvents to Monitor Directories for Changes on Mac OS X</a>, <a href="http://stackoverflow.com/questions/588749/python-daemon-packaging-best-practices">Python Daemon Packaging Best Practices</a>
+</p>
+
+<ol class='foot man'>
+  <li class='tl'><a href="http://twitter.com/beatak">@beatak</a></li>
+  <li class='tc'>Directory monitor by MacFSEvents</li>
+  <li class='tr'>December 2011</li>
+</ol>
+
+</div>
+
+  </body>
+</html>
