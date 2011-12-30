@@ -51,7 +51,7 @@ def normalize_path(str):
     elif string.find(str, '/') == 0:
         result = str
     else :
-        result = os.path.abspath( os.path.dirname(__file__) + '/' + str )
+        result = os.path.abspath( os.getcwd() + '/' + str )
     return result
 
 def main():
