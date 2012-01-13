@@ -43,7 +43,8 @@ callback_script = False
 
 def file_event_callback(event):
     logger.info('Mask: %s, Cookie: %s, Name: %s' % (event.mask, event.cookie, event.name))
-    proc = subprocess.Popen(callback_script)
+    proc = subprocess.Popen([callback_script, event.mask, event.name])
+    proc.wait()
 
 def normalize_path(str):
     if string.find(str, '~') == 0:
